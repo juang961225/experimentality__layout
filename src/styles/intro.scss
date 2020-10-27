@@ -1,0 +1,123 @@
+.intro {
+  background-image: url("./assets/fondo-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-position-x: -2rem;
+  background-position-y: -2rem;
+  background-size: 29rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    width: 81px;
+  }
+
+  &__line-break {
+    font-size: 0;
+    display: block;
+  }
+
+  &__subtitle {
+    display: none;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 2.2rem;
+  }
+
+  &__arrow {
+    width: 92px;
+    margin-top: 5rem;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    background-position-x: -4rem;
+    background-position-y: -4rem;
+    background-size: 69rem;
+    align-items: flex-start;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__line-break {
+      font-size: 0;
+      display: inline-block;
+    }
+
+    &__img {
+      width: 5rem;
+    }
+
+    &__container-subtitle {
+      display: flex;
+    }
+
+    &__subtitle {
+      display: block;
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: white;
+    }
+
+    &__title {
+      margin: 0 auto;
+      margin-top: 18rem;
+      font-size: 4.2rem;
+    }
+
+    &__arrow {
+      margin: 0 auto;
+      margin-top: 19rem;
+      width: 13rem;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    background-image: url("./assets/fonto-intro-desktop-11.png");
+    background-position-x: 41%;
+    background-position-y: -7rem;
+    background-size: 115%;
+
+    &__container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__line-break {
+      font-size: 0;
+      display: inline-block;
+    }
+
+    &__img {
+      width: 6rem;
+    }
+
+    &__container-subtitle {
+      display: flex;
+    }
+
+    &__subtitle {
+      display: block;
+      font-size: 3rem;
+      margin: 0 1rem;
+      color: white;
+    }
+
+    &__title {
+      margin-top: 9rem;
+      font-size: 7rem;
+    }
+
+    &__arrow {
+      margin-top: 15rem;
+      width: 18rem;
+    }
+  }
+}
+// background-image: url("./assets/fonto-intro-desktop-11.png");

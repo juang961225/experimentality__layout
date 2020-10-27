@@ -1,0 +1,40 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin: 0 auto;
+    color: #48484a;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: #48484a;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    &__text {
+      width: 90%;
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 1025px) {
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__text {
+      width: 90%;
+      font-size: 3rem;
+    }
+  }
+}

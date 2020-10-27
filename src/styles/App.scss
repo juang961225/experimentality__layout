@@ -1,0 +1,24 @@
+/* Reset/normalize */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-family: HKGrotesk, arial, sans-serif;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}

@@ -1,0 +1,253 @@
+.form {
+  background-image: url("./assets/fondo-form-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position-x: -1rem;
+  background-position-y: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+
+  &__title {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px white;
+    border-radius: 2rem;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__label {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 60%;
+    margin-bottom: 7px;
+    font-size: 1rem;
+  }
+
+  &__input {
+    display: block;
+    margin-left: 20px;
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    border: white;
+    opacity: 0.6;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__terms {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox {
+    margin-left: 20%;
+    /* Doble-tamaño Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari y Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+    opacity: 0.5;
+  }
+
+  &__label-checkbox {
+    margin-left: 5%;
+    width: 70%;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__broken {
+    font-size: 0;
+    display: block;
+  }
+
+  &__send {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-left: 5%;
+    font-size: 15px;
+    width: 80%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    width: 30%;
+    margin-left: 30%;
+    margin-right: 10%;
+    font-weight: bold;
+    color: #48484a;
+    font-size: 1rem;
+    height: 35px;
+    width: 140px;
+    border-radius: 13px;
+    border: white;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    background-image: url("./assets/prueba-maqeutado-curvas-12.png");
+    background-size: 71rem;
+    background-position-x: -2rem;
+    background-position-y: 0rem;
+
+    &__title {
+      margin-top: 75px;
+      margin-bottom: 75px;
+      font-size: 3.5rem;
+    }
+
+    &__label {
+      font-size: 2rem;
+    }
+
+    &__label-checkbox {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      margin-right: 0;
+      width: 50%;
+    }
+
+    &__send {
+      flex-direction: row;
+      margin-top: 30px;
+    }
+
+    &__button {
+      margin-left: 1%;
+      width: 280px;
+      height: 60px;
+      font-size: 2rem;
+    }
+
+    &__checkbox {
+      margin-left: 20%;
+      /* Doble-tamaño Checkboxes */
+      -ms-transform: scale(3); /* IE */
+      -moz-transform: scale(3); /* FF */
+      -webkit-transform: scale(3); /* Safari y Chrome */
+      -o-transform: scale(3); /* Opera */
+      padding: 40px;
+      opacity: 0.5;
+    }
+
+    &__broken {
+      display: inline-block;
+    }
+
+    &__terms {
+      margin-top: 30px;
+    }
+
+    &__input {
+      height: 50px;
+      opacity: 0.6;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    background-image: url("./assets/prueba-maqeutado-curvas-12.png");
+    background-size: 108%;
+    background-position-x: -7rem;
+    background-position-y: 2rem;
+
+    &__title {
+      margin-top: 250px;
+      margin-bottom: 250px;
+      font-size: 6rem;
+    }
+
+    &__input {
+      height: 70px;
+      opacity: 0.6;
+      font-size: 2rem;
+    }
+
+    &__label {
+      font-size: 3rem;
+    }
+
+    &__label-checkbox {
+      font-size: 3rem;
+    }
+
+    &__checkbox {
+      margin-left: 20%;
+      /* Doble-tamaño Checkboxes */
+      -ms-transform: scale(4); /* IE */
+      -moz-transform: scale(4); /* FF */
+      -webkit-transform: scale(4); /* Safari y Chrome */
+      -o-transform: scale(4); /* Opera */
+      padding: 40px;
+      opacity: 0.5;
+    }
+
+    &__text {
+      font-size: 3rem;
+      width: 50%;
+    }
+
+    &__wrapper-inputs {
+      margin-left: 40px;
+    }
+
+    &__wrapper {
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    &__send {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__button {
+      margin-left: 1%;
+      width: 360px;
+      height: 80px;
+      font-size: 2rem;
+    }
+
+    &__broken {
+      display: inline-block;
+    }
+
+    &__terms {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    font-weight: lighter;
+  }
+
+  &__img {
+    width: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    &__title {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    &__img {
+      width: 5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    &__title {
+      font-size: 3rem;
+      margin-top: 5rem;
+    }
+
+    &__img {
+      width: 9rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
